@@ -6,7 +6,7 @@
 
 /* Styles to hide content that should not be visible until the user takes an action. */
 .user-info {
-    display: none;
+	display: none;
 }
 .details {
     display: none;
@@ -28,6 +28,12 @@
 .highlights img {
     margin: 0.5em;
     width: 25%;
+}
+
+.thanks {
+	display: none;
+	font-size: 4em;
+	color: gold;
 }
 .voting .voting-buttons {
     margin: 1em 0;
