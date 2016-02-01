@@ -19,7 +19,7 @@ $( document ).ready(function() {
 		var greatestBar = $(".greatest-progress");
 		var greatWidth = voteCounts.great / voteCounts.total; // width of greatBar
 		var greatestWidth = voteCounts.greatest / voteCounts.total; //width of greatestBar
-		greatBar.css("width", greatWidth * 100 + "%"); // displaying of bar: the width times 100 so that percentage is represented on a scale of 1 to 100 and not .01 to 1.0. 
+		greatBar.css("width", greatWidth * 100 + "%"); // displaying of bar: the width times 100 so that percentage is represented on a scale of 1 to 100 and not .01 to 1.0. git 
 		greatestBar.css("width", greatestWidth * 100 + "%");
 	};
 
