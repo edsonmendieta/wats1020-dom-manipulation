@@ -55,15 +55,6 @@ $( document ).ready(function() {
 	});
 	
 
-    // TODO: Create a function that listens for clicks on the voting buttons and
-    // looks at the `data-vote` attribute on each button to see what was voted for,
-    // then determines the updated vote breakdown to adjust the progress bars.
-    //      1. Set up an event listener on the buttons with the `vote` class.
-    //      2. When a button is clicked, look at the `data-vote` attribute to determine
-    //          what the user is voting for ("great" or "greatest").
-    //      3. Increment the counter for whichever vote talley is affected.
-    //      4. Determine the respective percentages (out of 100) for each progress bar.
-    //      5. Modify the `width` attribute on each progress bar to set the updated percentage.
 	
 	
 	$(".vote").on("click", function(event){ // function executes when either voting button is clicked. 
