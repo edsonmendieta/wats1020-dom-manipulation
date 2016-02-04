@@ -14,6 +14,11 @@ $( document ).ready(function() {
         total: 0
     };
 	
+	if (("localStorage" in window) && ("localStorage" !== null)) 
+		voteCounts = JSON.parse(localStorage.getItem("voteCounts")); // retrieves the saved record of voteCounts from the computer's local storage after user votes and displays the bar graphs accordingly.
+	
+	
+	
 	var updateBars = function(voteCounts){ 
 		var greatBar = $(".great-progress");
 		var greatestBar = $(".greatest-progress");
@@ -58,8 +63,10 @@ $( document ).ready(function() {
 	
 	
 	$(".vote").on("click", function(event){ // function executes when either voting button is clicked. 
+		
+
 		var button = $(event.target);
-		if(button.data("vote") == "great"){ // identifies specific button by data attribute and does this if it's the "great" button.
+		if (button.data("vote") == "great"){ // identifies specific button by data attribute and does this if it's the "great" button.
 			voteCounts.great += 1; // tally is recorded to "great" property of voteCounts object.
 		} else if (button.data("vote") == "greatest"){ //identifies specific button by data attribue and does this if it's the "greatest" button. 
 			voteCounts.greatest += 1;
@@ -76,7 +83,8 @@ $( document ).ready(function() {
 		});
 	
 
-	voteCounts = JSON.parse(localStorage.getItem("voteCounts")); // retrieves the saved record of voteCounts from the computer's local storage after user votes and displays the bar graphs accordingly.
+	
+
 	
 	
 
