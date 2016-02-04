@@ -14,7 +14,7 @@ $( document ).ready(function() {
         total: 0
     };
 	
-	if (("localStorage" in window) && ("localStorage" !== null)) 
+	if (("localStorage.voteCounts" in window) && ("localStorage.voteCounts" !== null)) 
 		voteCounts = JSON.parse(localStorage.getItem("voteCounts")); // retrieves the saved record of voteCounts from the computer's local storage after user votes and displays the bar graphs accordingly.
 	
 	
