@@ -61,7 +61,7 @@ $( document ).ready(function() {
 	
 	
 	$(".vote").on("click", function(event){ // function executes when either voting button is clicked. 
-		if (("localStorage.voteCounts" in window) && ("localStorage.voteCounts" !== null)) 
+		if (("localStorage" in window) && window[localStorage] !== null) 
 		voteCounts = JSON.parse(localStorage.getItem("voteCounts")); // retrieves the saved record of voteCounts from the computer's local storage after user votes and displays the bar graphs accordingly.
 
 		var button = $(event.target);
